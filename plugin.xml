@@ -45,15 +45,7 @@
     <header-file src="src/ios/PushPlugin.h"/>
 
     <framework src="PushKit.framework"/>
-
-    <podspec>
-      <!-- keep empty `config` object to prevent `cordova-common` install issues.-->
-      <config></config>
-      <pods use-frameworks="true">
-        <pod name="FirebaseMessaging" spec="~> 2.0.0" />
-      </pods>
-    </podspec>
-  </platform>
+    <framework src="FirebaseMessaging" type="podspec" spec="~> 2.0.0"/>
   <platform name="windows">
     <hook type="after_plugin_install" src="hooks/windows/setToastCapable.js"/>
     <js-module src="src/windows/PushPluginProxy.js" name="PushPlugin">
