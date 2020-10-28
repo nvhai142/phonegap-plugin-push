@@ -45,7 +45,8 @@
     <header-file src="src/ios/PushPlugin.h"/>
 
     <framework src="PushKit.framework"/>
-    <framework src="FirebaseMessaging" type="podspec" spec="~> 2.0.0"/>
+    <framework src="FirebaseMessaging" type="podspec" spec="~> 4.1.9" />
+  </platform>
   <platform name="windows">
     <hook type="after_plugin_install" src="hooks/windows/setToastCapable.js"/>
     <js-module src="src/windows/PushPluginProxy.js" name="PushPlugin">
